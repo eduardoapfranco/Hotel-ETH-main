@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: rgb(247, 249, 252);
+  height: 100%;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.noWrap {
+  height: 100vh;
+  text-align: center;
+  flex-wrap: nowrap !important;
+}
+div.rbc-toolbar > span:nth-child(3) {
+  display: block;
+  width: 180px;
+}
+.App div.rbc-calendar {
+  height: calc(100% - 48px);
+  margin-bottom: 10px;
+  font-family: 'Roboto';
+}
+
+.App .rbc-event {
+  background-color: #1b76d2;
+  cursor: default;
+}
+
+.App .available-day {
+  cursor: pointer;
+}
+.App .past-day {
+  cursor: not-allowed;
+}
+
+.App .available-day:hover,
+.available-day.rbc-selected-cell {
+  background: #9c27b0;
+  opacity: 0.3;
+  transition: background 0.3s ease;
+}
+
+@media (max-width: 576px) {
+  html,
+  body,
+  #root {
+    overflow: auto;
+  }
+}

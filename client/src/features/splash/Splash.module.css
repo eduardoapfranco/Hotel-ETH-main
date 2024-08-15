@@ -1,0 +1,76 @@
+.wrapper {
+  background-image: url('https://ik.imagekit.io/125hl1956/Side_Projects/patrick-robert-doyle-AH8zKXqFITA-unsplash__iAyXIciD4I.jpg?updatedAt=1640784819639');
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.wrapper > .textContainer {
+  height: 100%;
+}
+
+.wrapper > .textContainer > button {
+  margin-top: 8px;
+}
+.wrapper > .textContainer > .text a {
+  color: white;
+}
+
+.warning {
+  position: absolute;
+  bottom: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  max-width: 90%;
+  text-align: center;
+}
+.warning > div {
+  display: flex;
+  justify-content: center;
+}
+
+.warning .MuiAlert-icon {
+  margin-right: 8px !important;
+}
+
+.text,
+.links a {
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+  transition: color 0.3s ease;
+}
+
+.links {
+  max-width: 150px;
+  margin-top: 16px;
+}
+
+.links a:hover {
+  color: #ddd;
+}
+
+.chip {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+}
+
+@media (max-width: 576px) {
+  h1.text {
+    font-size: 3rem;
+  }
+  h6.text {
+    font-size: 1rem;
+  }
+  .chip div:nth-child(1) {
+    max-width: 70%;
+  }
+  .chip div:nth-child(2) {
+    max-width: 100px;
+  }
+}
